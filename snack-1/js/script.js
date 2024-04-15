@@ -6,18 +6,39 @@
 const bikeList = [
     {
         bike: "Pantani's bike",
-        weigth: "25 kg",
+        weight: 25,
     },
     {
         bike: "TREK",
-        weigth: "16 kg",
+        weight: 16,
     },
     {
         bike: "Pittarosso",
-        weigth: "21 kg",
+        weight: 11,
     },
     {
         bike: "CUBE",
-        weigth:"32 kg",
+        weight: 32,
+    },
+    {
+        bike: "woom",
+        weight: 13,
     },
 ];
+
+const notheavy = document.getElementById("notHeavy");
+let minWeight = bikeList[0].weight;
+let minName = bikeList[0].bike;
+
+bikeList.forEach((curBike) => {
+    const {bike, weight} = curBike;
+
+
+    if (weight < minWeight) {
+        minWeight = weight;
+        minName = bike;
+    }
+    
+
+})
+notheavy.innerHTML = `${minName} ${minWeight}`;

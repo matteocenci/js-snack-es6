@@ -7,3 +7,5 @@ Crea quindi un nuovo array inserendo, per ogni persona, una frase con il nome e 
 - nome
 - cognome
 - età
+
+2. utilizzo map per creare nuovo array.
